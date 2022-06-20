@@ -15,7 +15,7 @@
         <div class="row row-cols-1 g-0 row-cols-sm-2">
             {% for image in post.featured_images %}
                 <div class="col">
-                    <img src="{{ image.path|resize(961, 640, {mode: 'crop'}) }}" alt="{{ image.title }}" class="img-fluid">
+                    <img src="{{ image.thumb(961, 640, {mode: 'crop'}) }}" alt="{{ image.title }}" class="img-fluid">
                 </div>
             {% endfor %}
         </div>
