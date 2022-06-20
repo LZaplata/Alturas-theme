@@ -1,0 +1,27 @@
+uuid: 6c5e316c-3d1a-493d-87d0-698387291de9
+handle: Download\File
+type: stream
+name: Soubory
+drafts: false
+
+navigation:
+    icon: icon-files-o
+    parent: Download
+    order: 20
+
+fields:
+    description:
+        label: Popis
+        type: richeditor
+        size: huge
+    file:
+        label: Soubor
+        type: fileupload
+        mode: file
+        maxFiles: 1
+        span: left
+    categories:
+        label: Kategorie
+        type: entries
+        source: Download\Category
+        span: right

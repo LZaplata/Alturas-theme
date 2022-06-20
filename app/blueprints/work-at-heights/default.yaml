@@ -1,0 +1,26 @@
+uuid: f888c2af-ebef-4e02-8d9f-dd7f960c6006
+handle: WorkAtHeights
+type: single
+name: Práce ve výškách
+drafts: true
+
+primaryNavigation:
+    label: Práce ve výškách
+    icon: icon-building-o
+    order: 50
+
+navigation:
+    label: Obsah
+    icon: icon-file-text-o
+    parent: WorkAtHeights
+
+fields:
+    content:
+        label: Text
+        type: richeditor
+        size: huge
+    images:
+        label: Obrázky
+        type: fileupload
+        mode: image
+        span: left

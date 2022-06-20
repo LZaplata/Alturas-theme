@@ -1,0 +1,33 @@
+uuid: 663a96c1-15b1-4a05-a19a-f238874979ec
+handle: OoppInspections
+type: single
+name: Kontroly OOPP
+drafts: false
+
+primaryNavigation:
+    label: Kontroly OOPP
+    icon: icon-check
+    order: 40
+
+navigation:
+    label: Obsah
+    icon: icon-file-text-o
+    parent: OoppInspections
+
+fields:
+    content_top:
+        label: Horní text
+        type: richeditor
+        size: huge
+    content_middle:
+        label: Prostřední text
+        type: richeditor
+        size: huge
+    brands:
+        label: Značky
+        type: fileupload
+        mode: image
+    content_bottom:
+        label: Spodní text
+        type: richeditor
+        size: huge

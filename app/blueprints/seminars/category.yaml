@@ -1,0 +1,26 @@
+uuid: d04c22ac-17c8-43f3-bd5b-7be862b1ae0a
+handle: Seminars\Category
+type: structure
+name: Kategorie
+drafts: false
+
+structure:
+    maxDepth: 1
+
+navigation:
+    icon: icon-folder-o
+    parent: Seminars\Seminar
+    order: 20
+
+fields:
+    text:
+        label: Text
+        type: richeditor
+        size: huge
+    banner:
+        label: Banner
+        type: fileupload
+        mode: image
+        maxFiles: 1
+        imageWidth: 1920
+        imageHeight: 744

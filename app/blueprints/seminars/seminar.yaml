@@ -1,0 +1,39 @@
+uuid: f501deb2-b816-4821-9b58-b385fb33bfff
+handle: Seminars\Seminar
+type: stream
+name: Školení
+drafts: false
+
+primaryNavigation:
+    label: Školení
+    icon: icon-shield
+    order: 30
+
+navigation:
+    label: Školení
+    parent: Seminars\Seminar
+    icon: icon-list-ul
+    order: 10
+
+fields:
+    heading:
+        label: Nadpis v detailu
+        type: text
+    excerpt:
+        label: Perex
+        type: textarea
+        size: small
+    content:
+        label: Obsah
+        type: richeditor
+        size: huge
+    images:
+        label: Obrázky
+        type: fileupload
+        mode: image
+        span: left
+    categories:
+        label: Kategorie
+        type: entries
+        source: Seminars\Category
+        span: right

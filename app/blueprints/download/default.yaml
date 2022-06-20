@@ -1,0 +1,22 @@
+uuid: b0f02e46-cd2d-4a13-b44a-349b9cf972a3
+handle: Download
+type: single
+name: Ke stažení
+drafts: false
+
+primaryNavigation:
+    label: Ke stažení
+    icon: icon-download
+    order: 20
+
+navigation:
+    label: Obsah
+    parent: Download
+    icon: icon-file-text-o
+    order: 10
+
+fields:
+    content:
+        label: Text
+        type: richeditor
+        size: huge

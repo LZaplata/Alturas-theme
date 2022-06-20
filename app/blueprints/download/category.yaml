@@ -1,0 +1,13 @@
+uuid: 2d11c5ae-dcb9-4398-a13b-77af76d14993
+handle: Download\Category
+type: structure
+name: Kategorie
+drafts: false
+
+structure:
+    maxDepth: 1
+
+navigation:
+    icon: icon-folder-o
+    parent: Download
+    order: 30

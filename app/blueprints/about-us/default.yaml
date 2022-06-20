@@ -1,0 +1,41 @@
+uuid: 6935af1d-ca2e-41ee-b83d-1ff89cfc90c8
+handle: AboutUs
+type: single
+name: O nás
+drafts: false
+
+primaryNavigation:
+    label: O nás
+    icon: icon-user
+    order: 10
+
+navigation:
+    label: Obsah
+    icon: icon-file-text-o
+    parent: AboutUs
+    order: 10
+
+fields:
+    content_top:
+        label: Horní text
+        type: richeditor
+        size: huge
+    contacts:
+        label: Kontakty
+        type: repeater
+        form:
+            fields:
+                name:
+                    label: Jméno
+                    type: text
+                job:
+                    label: Práce
+                    type: Text
+                description:
+                    label: Popis
+                    type: richeditor
+                    size: huge
+    content_bottom:
+        label: Spodní text
+        type: richeditor
+        size: huge
