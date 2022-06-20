@@ -25,6 +25,13 @@ fields:
         type: repeater
         form:
             fields:
+                photo:
+                    label: Foto
+                    type: fileupload
+                    mode: image
+                    maxFiles: 1
+                    imageWidth: 213
+                    imageHeight: 209
                 name:
                     label: Jméno
                     type: text
