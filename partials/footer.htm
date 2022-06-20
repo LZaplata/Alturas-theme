@@ -1,0 +1,48 @@
+[staticMenu footerMenu]
+code = "footer-menu"
+==
+<footer class="container-fluid py-5 bg-blue position-relative text-white fs-16">
+    <div class="container-lg">
+        <div class="row row-cols-1 row-cols-md-2">
+            <div class="col order-1">
+                <img src="{{ 'assets/images/logo-footer.svg'|theme }}" alt="Logo">
+            </div>
+
+            <div class="claim col order-2 order-md-3 text-uppercase fw-bold">
+                <p class="mb-md-4">
+                    pracujeme na nejvyšších místech
+                </p>
+            </div>
+
+            <div class="address col order-3 order-md-5">
+                <p class="mb-4 mb-md-0">
+                    Alturas s.r.o. <br>
+                    Jablonecká 360/21 <br>
+                    190 00 Praha 9 <br>
+                    IČ: 071 75 981 <br>
+                    DIČ: CZ 071 75 981
+                </p>
+            </div>
+
+            <div class="link col order-4 order-md-2 d-md-flex align-items-md-center">
+                <p class="mb-4 mb-md-0">
+                    <a href="{{ 'contact-us'|page }}" class="btn btn-blue-light btn-sm text-uppercase">
+                        kontaktujte nás
+                    </a>
+                </p>
+            </div>
+
+            <div class="phone col order-5 order-md-4">
+                <p class="mb-4">
+                    <a href="tel:+420 607 712 834" class="text-white text-blue-light-hover transition fw-bold">
+                        +420 607 712 834
+                    </a>
+                </p>
+            </div>
+
+            <div class="menu col order-5">
+                {% component "footerMenu" %}
+            </div>
+        </div>
+    </div>
+</footer>

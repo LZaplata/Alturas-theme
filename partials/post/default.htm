@@ -1,0 +1,23 @@
+{% set post = __SELF__.post %}
+
+<div class="container-lg pt-xl-5">
+    <h1 class="text-uppercase mb-5">
+        {{ post.title }}
+    </h1>
+
+    <div class="richeditor">
+        {{ post.content_html|raw }}
+    </div>
+</div>
+
+{% if post.featured_images.count %}
+    <div class="mt-5 pt-xl-5 gallery mx-n3">
+        <div class="row row-cols-1 g-0 row-cols-sm-2">
+            {% for image in post.featured_images %}
+                <div class="col">
+                    <img src="{{ image.path|resize(961, 640, {mode: 'crop'}) }}" alt="{{ image.title }}" class="img-fluid">
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endif %}

@@ -1,0 +1,25 @@
+url = "/blog/:page?"
+layout = "default"
+title = "Blog"
+
+[blogPosts posts]
+pageNumber = "{{ :page }}"
+postsPerPage = 16
+noPostsMessage = "Nenalezeny žádné příspěvky"
+sortOrder = "published_at desc"
+categoryPage = "blog"
+postPage = "blog-post"
+==
+<div class="container-fluid py-5 overflow-hidden" id="blog">
+    <div class="container-lg py-xl-5">
+        <h1 class="text-uppercase mb-4">
+            {{ this.page.title }}
+        </h1>
+
+        <div class="richeditor mb-5">
+            Všechno, co jste nevěděli o práci ve výškách, vybavení a postupech.
+        </div>
+
+        {% component "posts" %}
+    </div>
+</div>

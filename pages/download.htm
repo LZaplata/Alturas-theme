@@ -1,0 +1,54 @@
+url = "/ke-stazeni"
+layout = "default"
+title = "Ke stažení"
+
+[section download]
+handle = "Download"
+
+[collection categories]
+handle = "Download\Category"
+
+[collection files]
+handle = "Download\File"
+==
+<div class="container-fluid py-5 overflow-hidden" id="download">
+    <div class="container-lg py-xl-5">
+        <h1 class="text-uppercase mb-4">
+            {{ download.title }}
+        </h1>
+
+        <div class="richeditor">
+            {{ download.content|raw }}
+        </div>
+
+        {% for category in categories %}
+            {% set category_files = files.whereRelation("categories", "slug", category.slug).get() %}
+
+            <div class="mt-5 category">
+                <h2 class="h3 mb-4">
+                    {{ category.title }}
+                </h2>
+
+                {% for file in category_files %}
+                    <div class="file row g-4 g-md-5 g-xl-6 {% if not loop.first %}mt-0 mt-xl-n5{% endif %}">
+                        <div class="title col-12 d-flex col-md-auto">
+                            <a href="{{ file.file.path }}" target="_blank" class="bg-blue-light bg-blue-hover transition p-4 fw-bold text-white fs-24 d-flex position-relative align-items-center">
+                                {{ file.title }}
+
+                                <span class="mb-0 position-absolute end-0 bottom-0 d-flex">
+                                    <span class="bg-blue px-1 py-1 text-white">
+                                        <i class="bi bi-arrow-right-short fss-28 lh-1 d-flex"></i>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class="col-12 col-md">
+                            {{ file.description|raw }}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+</div>

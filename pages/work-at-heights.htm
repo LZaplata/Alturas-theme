@@ -1,0 +1,28 @@
+url = "/prace-ve-vyskach"
+layout = "default"
+title = "Práce ve výškách"
+
+[section workAtHeights]
+handle = "WorkAtHeights"
+==
+<div class="container-fluid pt-5 overflow-hidden" id="work-at-heights">
+    <div class="container-lg pt-xl-5">
+        <h1 class="text-uppercase mb-4">
+            {{ workAtHeights.title }}
+        </h1>
+
+        <div class="richeditor">
+            {{ workAtHeights.content|raw }}
+        </div>
+    </div>
+
+    <div class="mt-5 pt-xl-5 gallery mx-n3">
+        <div class="row row-cols-1 g-0 row-cols-sm-2">
+            {% for image in workAtHeights.images %}
+                <div class="col">
+                    <img src="{{ image.path|resize(961, 640, {mode: 'crop'}) }}" alt="{{ image.title }}" class="img-fluid">
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

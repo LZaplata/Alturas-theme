@@ -1,0 +1,19 @@
+{% for item in items %}
+    {% if not item.viewBag.isHidden %}
+        <li role="presentation" class="nav-item {{ item.viewBag.cssClass }}">
+            {% if item.url %}
+                <a href="{{ item.url }}" {{ item.viewBag.isExternal ? 'target="_blank"' }} class="nav-link text-uppercase {{ item.isActive ? 'active' : '' }} {{ item.isChildActive ? 'child-active' : '' }}">
+                    {{ item.title }}
+                </a>
+            {% else %}
+                <span>{{ item.title }}</span>
+            {% endif %}
+        </li>
+    {% endif %}
+{% endfor %}
+
+<li class="d-inline-flex mt-3 mt-xl-0">
+    <a href="{{ 'contact-us'|page }}" class="btn btn-blue btn-sm text-uppercase">
+        kontaktujte nás
+    </a>
+</li>

@@ -1,0 +1,45 @@
+url = "/kontaktujte-nas"
+layout = "default"
+title = "Kontaktujte nás"
+
+[contactForm]
+==
+<div class="container-fluid py-5 overflow-hidden" id="contact-us">
+    <div class="container-lg py-xl-5">
+        <h1 class="text-uppercase mb-4">
+            {{ this.page.title }}
+        </h1>
+
+        <div class="row g-md-5">
+            <div class="col-12 col-md-8 col-xl-7">
+                {% component "contactForm" %}
+            </div>
+
+            <div class="fs-16 mt-5 col-12 col-md-4 col-lg-3 offset-lg-1 offset-xl-2">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-1">
+                    <div class="col richeditor">
+                        <p>
+                            <span class="fw-bold">Kontaktní údaje:</span><br>
+                            Ing. Karina Řeháková <br>
+                            Na Zlatnici 938/7 <br>
+                            147 00 Praha 4 <br>
+                            <a href="tel:+420 607 712 834" class="text-decoration-none fw-normal">+420 607 712 834</a><br>
+                            <a href="mailto:karina@alturas.cz" class="text-decoration-none fw-normal">karina@alturas.cz</a>
+                        </p>
+                    </div>
+
+                    <div class="col richeditor">
+                        <p class="mb-0">
+                            <span class="fw-bold">Fakturační údaje:</span><br>
+                            Alturas s.r.o. <br>
+                            Jablonecká 360/21 <br>
+                            190 00 Praha 9 <br>
+                            IČ: 071 75 981 <br>
+                            DIČ: CZ 071 75 981 <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

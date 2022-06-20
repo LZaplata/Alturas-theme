@@ -1,0 +1,35 @@
+{% set posts = __SELF__.posts %}
+
+<div class="row blog">
+    <div class="col col-xl-8 offset-xl-2">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5 g-lg-6 g-xl-5 g-xxl-6">
+            {% for post in posts %}
+                <div class="col post">
+                    <a href="{{ post.url }}">
+                        <p class="img text-center text-sm-start">
+                            {% set image = post.featured_images.first %}
+
+                            <span class="d-inline-flex w-50 w-sm-auto position-relative">
+                                <img src="{{ image.thumb(213, 209, {mode: 'crop'}) }}" alt="{{ post.title }}" class="img-fluid border border-4 border-blue-light">
+
+                                <span class="mb-0 position-absolute end-0 bottom-0 d-flex">
+                                    <span class="bg-blue px-1 py-1 text-white">
+                                        <i class="bi bi-arrow-right-short fss-28 lh-1 d-flex"></i>
+                                    </span>
+                                </span>
+                            </span>
+                        </p>
+
+                        <p class="title fs-20 text-uppercase fw-bold text-center text-sm-start">
+                            {{ post.title }}
+                        </p>
+
+                        <p class="excerpt mb-0 fs-16 text-center text-sm-start">
+                            {{ post.excerpt }}
+                        </p>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

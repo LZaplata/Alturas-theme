@@ -1,0 +1,43 @@
+[staticMenu menu]
+code = "main-menu"
+
+[staticPage]
+useContent = 1
+default = 1
+
+[seo]
+==
+<!DOCTYPE html>
+<html class="h-100" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        {% component "seo" %}
+
+        <link rel="stylesheet" href="{{ [
+            'assets/css/theme.css',
+            'assets/css/bootstrap-icons.css',
+            'assets/css/swiper-bundle.css',
+        ]|theme }}" />
+    </head>
+
+    <body class="d-flex flex-column h-100">
+        {% partial "header" %}
+
+        <main class="position-relative">
+            {% page %}
+        </main>
+
+        {% partial "footer" %}
+
+        <script src="{{ [
+            'assets/js/jquery.min.js',
+            'assets/js/popper.js',
+            'assets/js/swiper-bundle.js',
+            'assets/js/bootstrap.js',
+            'assets/js/theme.js',
+        ]|theme }}"></script>
+    </body>
+</html>

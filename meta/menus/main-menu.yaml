@@ -1,0 +1,67 @@
+items:
+    -
+        title: 'O nás'
+        nesting: null
+        type: cms-page
+        url: null
+        code: ''
+        reference: about-us
+        cmsPage: null
+        replace: null
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Školení
+        nesting: null
+        type: cms-page
+        url: null
+        code: ''
+        reference: seminars
+        cmsPage: null
+        replace: null
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Kontroly OOP'
+        nesting: null
+        type: cms-page
+        url: null
+        code: ''
+        reference: oopp-inspections
+        cmsPage: null
+        replace: null
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Práce ve výškách'
+        nesting: null
+        type: cms-page
+        url: null
+        code: ''
+        reference: work-at-heights
+        cmsPage: null
+        replace: null
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: E-shop
+        nesting: null
+        type: url
+        url: 'https://alturas.cz/'
+        code: ''
+        reference: null
+        cmsPage: null
+        replace: null
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '1'
+name: 'Main menu'

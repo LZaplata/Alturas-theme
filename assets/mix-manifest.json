@@ -1,0 +1,12 @@
+{
+    "/js/theme.js": "/js/theme.js",
+    "/js/bootstrap.js": "/js/bootstrap.js",
+    "/js/popper.js": "/js/popper.js",
+    "/js/jquery.min.js": "/js/jquery.min.js",
+    "/js/swiper-bundle.js": "/js/swiper-bundle.js",
+    "/css/theme.css": "/css/theme.css",
+    "/css/swiper-bundle.css": "/css/swiper-bundle.css",
+    "/css/bootstrap-icons.css": "/css/bootstrap-icons.css",
+    "/css/fonts/bootstrap-icons.woff": "/css/fonts/bootstrap-icons.woff",
+    "/css/fonts/bootstrap-icons.woff2": "/css/fonts/bootstrap-icons.woff2"
+}

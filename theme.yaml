@@ -1,0 +1,14 @@
+name: Alturas
+description: 'Theme for Prague company providing climbing and other courses.'
+author: 'Lukáš Záplata'
+homepage: ''
+authorCode: LZaplata
+code: alturas
+parent: ''
+database: '0'
+require:
+    - rainlab.pages
+    - rainlab.blog
+    - janvince.smallcontactform
+    - lzaplata.extensions
+    - initbiz.seostorm

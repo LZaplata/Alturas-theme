@@ -1,0 +1,17 @@
+[blogPosts postsHomepage]
+pageNumber = "{{ :page }}"
+postsPerPage = 3
+noPostsMessage = "Nenalezeny žádné příspěvky"
+sortOrder = "published_at desc"
+categoryPage = "blog"
+postPage = "blog-post"
+==
+<div class="container-fluid py-5 overflow-hidden" id="blog">
+    <div class="container-lg py-xl-5">
+        <h2 class="text-uppercase text-center mb-4 mb-xl-5">
+            všechno, co jste nevěděli o práci ve výškách
+        </h2>
+
+        {% component "postsHomepage" %}
+    </div>
+</div>

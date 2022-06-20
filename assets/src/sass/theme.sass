@@ -1,0 +1,206 @@
+@import "custom"
+
+.btn-blue
+    --bs-btn-hover-bg: var(--bs-blue-light)
+
+.btn-blue-light
+    --bs-btn-color: var(--bs-white)
+    --bs-btn-hover-color: var(--bs-white)
+    --bs-btn-hover-bg: var(--bs-yellow)
+
+header
+    &:after
+        content: ""
+        position: absolute
+        bottom: -5px
+        left: 0
+        width: 100%
+        height: 5px
+        display: flex
+        background-image: linear-gradient(90deg, var(--bs-blue-light) 0, var(--bs-blue-light) 50%, var(--bs-yellow) 50%, var(--bs-yellow) 75%, var(--bs-red) 75%, var(--bs-red) 100%)
+
+    #offcanvas
+        .offcanvas-body
+            @include media-breakpoint-down(xl)
+                .nav
+                    li
+                        .nav-link
+                            --bs-nav-link-color: var(--bs-white)
+                            --bs-nav-link-font-size: var(--bs-font-size-24)
+
+                        .btn-blue
+                            --bs-btn-bg: var(--bs-blue-light)
+                            --bs-btn-font-size: var(--bs-font-size-16)
+
+main
+    margin-top: 5px
+
+    .swiper
+        .swiper-wrapper
+            .swiper-slide
+                img
+                    height: 250px
+
+    #crossroad
+        .links
+            .link
+                & > div
+                    &:after
+                        content: ""
+                        position: absolute
+                        top: 50%
+                        left: 0
+
+                &:nth-child(1)
+                    & > div
+                        &:after
+                            background: url("../images/icons/climber.png")
+                            height: 80px
+                            width: 48px
+                            transform: translateY(-50%) translateX(-50%)
+                            left: -15px
+
+                &:nth-child(2)
+                    & > div
+                        &:after
+                            background: url("../images/icons/binoculars.png")
+                            height: 35px
+                            width: 78px
+                            transform: translateX(50%)
+                            left: auto
+                            right: 0
+                            top: 20px
+
+                &:nth-child(3)
+                    & > div
+                        &:after
+                            background: url("../images/icons/helmet.png")
+                            height: 53px
+                            width: 56px
+                            transform: translateX(-50%) translateY(-50%)
+                            left: -10px
+
+                &:nth-child(4)
+                    & > div
+                        &:after
+                            background: url("../images/icons/rope.png")
+                            height: 70px
+                            width: 53px
+                            transform: translateX(50%) translateY(-50%)
+                            left: auto
+                            right: -8px
+
+    .banner
+        img
+            height: 250px
+
+    .richeditor
+        a
+            font-weight: var(--bs-font-weight-bold)
+            text-decoration: underline
+            transition: $transition-base
+
+            &:hover
+                color: var(--bs-blue-light)
+
+        h2
+            font-size: var(--bs-font-size-24)
+            margin-bottom: map-get($spacers, 4)
+
+        p + h2, ul + h2
+            margin-top: map-get($spacers, 4)
+
+            @include media-breakpoint-up(xl)
+                margin-top: map-get($spacers, 5)
+
+        ul + p
+            margin-top: map-get($spacers, 4)
+
+.blog
+    .post
+        a
+            .title
+                transition: $transition-base
+
+            &:hover, &:focus, &:active
+                .title
+                    color: var(--bs-blue-light) !important
+
+footer
+    margin-top: 5px
+
+    &:after
+        content: ""
+        position: absolute
+        top: -5px
+        left: 0
+        width: 100%
+        height: 5px
+        display: flex
+        background-image: linear-gradient(90deg, var(--bs-blue-light) 0, var(--bs-blue-light) 50%, var(--bs-yellow) 50%, var(--bs-yellow) 75%, var(--bs-red) 75%, var(--bs-red) 100%)
+
+    .claim, .address, .link, .phone, .menu
+        padding-left: 72px
+
+    .menu
+        .nav
+            .nav-item
+                .nav-link
+                    --bs-nav-link-color: var(--bs-white)
+                    --bs-nav-link-font-size: var(--bs-font-size-16)
+                    --bs-nav-link-font-weight: var(--bs-body-font-weight)
+
+#download
+    .category
+        .file
+            .title
+                & > a
+                    width: 100%
+
+                    @include media-breakpoint-up(md)
+                        width: 213px
+                        height: 209px
+
+#seminars
+    .category
+        .title
+            & > a
+                width: 100%
+
+                @include media-breakpoint-up(lg)
+                    width: 213px
+                    height: 209px
+
+    .seminars
+        .seminar
+            .title
+                & > a
+                    width: 100%
+                    height: 100%
+
+                    @include media-breakpoint-up(lg)
+                        width: 213px
+                        height: 209px
+
+#contact-us
+    #scf-form-contactForm
+        form
+            //&.was-validated
+                .form-group
+                    &:before
+                        top: 14px
+
+            .form-group
+                position: relative
+
+                &.has-error
+                    display: flex
+                    flex-direction: column
+
+                    input
+                        order: 0
+
+                    small
+                        order: 10
+                        display: block
+                        font-size: var(--bs-font-size-16)

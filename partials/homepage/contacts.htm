@@ -1,0 +1,42 @@
+[section aboutUs]
+handle = "AboutUs"
+==
+<div class="container-fluid py-5 overflow-hidden" id="contacts">
+    <div class="container-lg py-xl-5">
+        <h2 class="text-uppercase text-center mb-4 mb-xl-5">
+            naučíme vás, jak se bezpečně dostat co nejvýš
+        </h2>
+
+        <div class="row">
+            <div class="col col-xl-8 offset-xl-2">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5 g-lg-6 g-xl-5 g-xxl-6">
+                    {% for contact in aboutUs.contacts %}
+                        <div class="col contact">
+                            <a href="{{ 'about-us'|page }}">
+                                <p class="img text-center text-sm-start">
+                                    <span class="d-inline-flex w-50 w-sm-auto position-relative">
+                                        <img src="{{ 'assets/images/contacts/01.png'|theme|resize(213, 209, {mode: 'crop'}) }}" alt="karina Řeháková" class="img-fluid border border-4 border-blue-light">
+
+                                        <span class="mb-0 position-absolute end-0 bottom-0 d-flex">
+                                            <span class="bg-blue px-1 py-1 text-white">
+                                                <i class="bi bi-arrow-right-short fss-28 lh-1 d-flex"></i>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </p>
+
+                                <p class="name fs-20 fw-bold text-center text-sm-start mb-0">
+                                    {{ contact.name }}
+                                </p>
+
+                                <p class="job mb-0 text-center text-sm-start">
+                                    {{ contact.job }}
+                                </p>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

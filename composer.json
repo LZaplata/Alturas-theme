@@ -1,0 +1,8 @@
+{
+    "name": "lzaplata/alturas-theme",
+    "type": "october-theme",
+    "description": "Theme for Prague company providing climbing and other courses.",
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}

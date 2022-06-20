@@ -1,0 +1,11 @@
+url = "/blog/clanek/:slug"
+layout = "default"
+title = "Příspěvěk blogu"
+
+[blogPost post]
+slug = "{{ :slug }}"
+categoryPage = "blog"
+==
+<div class="container-fluid pt-5 overflow-hidden" id="blog-post">
+    {% component "post" %}
+</div>

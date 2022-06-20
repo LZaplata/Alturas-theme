@@ -1,0 +1,19 @@
+url = "/"
+layout = "default"
+title = "Úvod"
+==
+{% partial "homepage/banner" %}
+{% partial "homepage/crossroad" %}
+{% partial "homepage/partners" %}
+
+<div class="banner">
+    <img src="{{ 'assets/images/banners/homepage/01.jpg'|theme }}" alt="Banner" class="img-fluid h-sm-auto of-cover">
+</div>
+
+{% partial "homepage/contacts" %}
+
+<div class="banner">
+    <img src="{{ 'assets/images/banners/homepage/02.jpg'|theme }}" alt="Banner" class="img-fluid h-sm-auto of-cover">
+</div>
+
+{% partial "homepage/blog" %}
