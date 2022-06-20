@@ -1,6 +1,8 @@
 # After theme installation
 
-1. Navigate to the theme directory and install all needed packages via `npm` command.
+1. Copy `app` directory from the theme into the project root directory.
+
+2. In console navigate to the theme directory and install all needed packages via `npm` command.
 
 `npm install`
 
@@ -8,7 +10,7 @@
 
 `npx mix`
 
-## Watching SASS file changes
+## Watching SASS and JS file changes
 
 You can run watch command while styling the theme to automatically compile you assets.
 
