@@ -13,7 +13,7 @@
 {% if post.featured_images.count %}
     <div class="mt-5 pt-xl-5 gallery mx-n3">
         <div class="row row-cols-1 g-0 row-cols-sm-2">
-            {% for image in post.featured_images->skip(1) %}
+            {% for image in post.featured_images.skip(1) %}
                 <div class="col">
                     <img src="{{ image.thumb(961, 640, {mode: 'crop'}) }}" alt="{{ image.title }}" class="img-fluid">
                 </div>
