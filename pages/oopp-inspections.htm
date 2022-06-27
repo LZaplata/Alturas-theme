@@ -25,10 +25,10 @@ handle = "OoppInspections"
             {{ ooppInspections.content_middle|raw }}
         </div>
 
-        <div class="mt-4 mt-xl-5">
-            <div class="row row-cols-2 g-4 row-cols-sm-3 row-cols-md-4 row-cols-lg-6">
+        <div class="mt-5 pt-xl-4">
+            <div class="row row-cols-2 g-5 row-cols-sm-3 row-cols-md-4 row-cols-lg-6">
                 {% for brand in ooppInspections.brands %}
-                    <div class="col">
+                    <div class="col d-flex align-items-center">
                         <img src="{{ brand.path }}" alt="{{ brand.title }}" class="img-fluid">
                     </div>
                 {% endfor %}
