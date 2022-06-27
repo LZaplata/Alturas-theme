@@ -19,10 +19,12 @@ fields:
         label: Horní text
         type: richeditor
         size: huge
+        toolbarButtons: paragraphFormat|align|bold,italic,underline|formatOL,formatUL|insertTable,insertLink,insertImage,insertFile,insertHR,html
     content_middle:
         label: Prostřední text
         type: richeditor
         size: huge
+        toolbarButtons: paragraphFormat|align|bold,italic,underline|formatOL,formatUL|insertTable,insertLink,insertImage,insertFile,insertHR,html
     brands:
         label: Značky
         type: fileupload
@@ -31,3 +33,4 @@ fields:
         label: Spodní text
         type: richeditor
         size: huge
+        toolbarButtons: paragraphFormat|align|bold,italic,underline|formatOL,formatUL|insertTable,insertLink,insertImage,insertFile,insertHR,html
