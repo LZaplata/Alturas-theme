@@ -12,4 +12,11 @@ mix.setPublicPath("assets/")
     .js("node_modules/@popperjs/core/dist/esm/popper.js", "js/")
     .js("node_modules/jquery/dist/jquery.min.js", "js/")
     .js("node_modules/swiper/swiper-bundle.js", "js/")
-    .copyDirectory("node_modules/bootstrap-icons/font/fonts", "assets/css/fonts/");
+    .copyDirectory("node_modules/bootstrap-icons/font/fonts", "assets/css/fonts/")
+    .browserSync({
+        proxy: "localhost81/hucr/alturas.cz",
+        files: [
+            "partials/**/*",
+            "assets/src/sass/*",
+        ],
+    });
