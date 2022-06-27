@@ -19,6 +19,11 @@ header
         display: flex
         background-image: linear-gradient(90deg, var(--bs-blue-light) 0, var(--bs-blue-light) 50%, var(--bs-yellow) 50%, var(--bs-yellow) 75%, var(--bs-red) 75%, var(--bs-red) 100%)
 
+    #logo
+        a
+            object
+                pointer-events: none
+
     #offcanvas
         .offcanvas-body
             @include media-breakpoint-down(xl)
