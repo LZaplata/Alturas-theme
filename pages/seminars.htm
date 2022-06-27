@@ -32,14 +32,14 @@ handle = "Seminars\Seminar"
             {% endfor %}
         </div>
 
-        <div class="mt-4 mt-xl-5">
-            Pokud stále váháte, které školení by pro vás bylo nejlepší, nahlédněte do podrobnějších popisů jednotlivých typů školení nebo nás
-            <a href="{{ 'contact-us'|page }}">kontaktujte</a>.
-        </div>
+{#        <div class="mt-4 mt-xl-5">#}
+{#            Pokud stále váháte, které školení by pro vás bylo nejlepší, nahlédněte do podrobnějších popisů jednotlivých typů školení nebo nás#}
+{#            <a href="{{ 'contact-us'|page }}">kontaktujte</a>.#}
+{#        </div>#}
     </div>
 
     {% for category in categories %}
-        {% set category_seminars = seminars.whereRelation("categories", "slug", category.slug).get() %}
+        {% set category_seminars = seminars.whereRelation("categories", "slug", category.slug).orderBy("position", "ASC").get() %}
 
         <div class="mt-5 pt-xl-5 banner mx-n3">
             <img src="{{ category.banner.path }}" alt="Banner" class="img-fluid h-sm-auto of-cover">

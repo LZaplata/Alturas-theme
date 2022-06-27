@@ -16,6 +16,15 @@ navigation:
     order: 10
 
 fields:
+    position:
+        label: Pořadí
+        type: number
+        min: 0
+        step: 10
+        validation:
+            - numeric
+        span: left
+        default: 0
     heading:
         label: Nadpis v detailu
         type: text
