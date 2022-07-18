@@ -36,6 +36,7 @@ fields:
         label: Obsah
         type: richeditor
         size: huge
+        toolbarButtons: paragraphFormat|align|bold,italic,underline|formatOL,formatUL|insertTable,insertLink,insertImage,insertFile,insertHR,html
     images:
         label: Obrázky
         type: fileupload
