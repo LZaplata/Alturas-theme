@@ -70,6 +70,10 @@ $btn-padding-x:                 1.5rem;
 $btn-padding-y:                 .7rem;
 $btn-padding-x-sm:              1.5rem;
 $btn-padding-y-sm:              .7rem;
+$btn-font-size-lg:              map-get($font-sizes, 24);
+$btn-padding-x-lg:              4rem;
+$btn-padding-y-lg:              1.5rem;
+$btn-border-radius-lg:          $border-radius;
 
 $btn-close-focus-shadow:        none;
 

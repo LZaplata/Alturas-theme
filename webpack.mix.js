@@ -16,6 +16,7 @@ mix.setPublicPath("assets/")
     .browserSync({
         proxy: "localhost81/hucr/alturas.cz",
         files: [
+            "pages/**/*",
             "partials/**/*",
             "assets/src/sass/*",
         ],
