@@ -1,9 +1,13 @@
 items:
     -
         title: Kurzy
+        nesting: null
         type: cms-page
+        url: null
         code: ''
         reference: seminars
+        cmsPage: null
+        replace: null
         viewBag:
             isHidden: '0'
             cssClass: ''
@@ -75,13 +79,9 @@ items:
             isExternal: '0'
     -
         title: E-shop
-        nesting: null
         type: url
-        url: 'https://www.alturas.cz'
+        url: 'https://shop.alturas.cz'
         code: ''
-        reference: null
-        cmsPage: null
-        replace: null
         viewBag:
             isHidden: '0'
             cssClass: ''
