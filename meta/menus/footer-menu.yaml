@@ -1,13 +1,9 @@
 items:
     -
-        title: Školení
-        nesting: null
+        title: Kurzy
         type: cms-page
-        url: null
         code: ''
         reference: seminars
-        cmsPage: null
-        replace: null
         viewBag:
             isHidden: '0'
             cssClass: ''
@@ -66,9 +62,13 @@ items:
             isExternal: '0'
     -
         title: 'Ke stažení'
+        nesting: null
         type: cms-page
+        url: null
         code: ''
         reference: download
+        cmsPage: null
+        replace: null
         viewBag:
             isHidden: '0'
             cssClass: ''

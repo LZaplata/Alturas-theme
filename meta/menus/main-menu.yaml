@@ -13,14 +13,10 @@ items:
             cssClass: ''
             isExternal: '0'
     -
-        title: Školení
-        nesting: null
+        title: Kurzy
         type: cms-page
-        url: null
         code: ''
         reference: seminars
-        cmsPage: null
-        replace: null
         viewBag:
             isHidden: '0'
             cssClass: ''
