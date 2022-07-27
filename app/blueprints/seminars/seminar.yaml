@@ -1,11 +1,11 @@
 uuid: f501deb2-b816-4821-9b58-b385fb33bfff
 handle: Seminars\Seminar
 type: stream
-name: Školení
+name: Kurzy
 drafts: false
 
 primaryNavigation:
-    label: Školení
+    label: Kurzy
     icon: icon-shield
     order: 30
 
