@@ -10,7 +10,7 @@ primaryNavigation:
     order: 30
 
 navigation:
-    label: Školení
+    label: Kurzy
     parent: Seminars\Seminar
     icon: icon-list-ul
     order: 10
@@ -47,3 +47,6 @@ fields:
         type: entries
         source: Seminars\Category
         span: right
+    reenio_url:
+        label: Reenio URL
+        span: left
