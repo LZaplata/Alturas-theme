@@ -1,3 +1,5 @@
+window.$ = window.jQuery = require("jquery");
+
 var swiper = new Swiper(".reviews-swiper", {
     navigation: {
         nextEl: ".swiper-button-next",
@@ -6,4 +8,10 @@ var swiper = new Swiper(".reviews-swiper", {
     pagination: {
         el: ".swiper-pagination",
     },
+});
+
+$(document).ready(function () {
+    $("#offcanvas .nav li a").click(function () {
+        $("#offcanvas button").click();
+    });
 });

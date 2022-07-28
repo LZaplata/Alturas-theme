@@ -25,6 +25,81 @@ items:
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
+        items:
+            -
+                title: 'Práce ve výškách'
+                nesting: null
+                type: url
+                url: '/hucr/alturas.cz/kurzy#prace-ve-vyskach'
+                code: ''
+                reference: null
+                cmsPage: null
+                replace: null
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'První pomoc'
+                nesting: null
+                type: url
+                url: '/hucr/alturas.cz/kurzy#prvni-pomoc'
+                code: ''
+                reference: null
+                cmsPage: null
+                replace: null
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Online kurzy'
+                nesting: null
+                type: url
+                url: '/hucr/alturas.cz/kurzy#online-kurzy'
+                code: ''
+                reference: null
+                cmsPage: null
+                replace: null
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: E-learning
+                nesting: null
+                type: url
+                url: '/hucr/alturas.cz/kurzy#e-learning'
+                code: ''
+                reference: null
+                cmsPage: null
+                replace: null
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: Teambuilding
+                nesting: null
+                type: url
+                url: '/hucr/alturas.cz/kurzy#teambuilding'
+                code: ''
+                reference: null
+                cmsPage: null
+                replace: null
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Volné termíny'
+                type: cms-page
+                code: ''
+                reference: free-dates
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
     -
         title: 'Kontroly OOPP'
         nesting: null
@@ -53,9 +128,13 @@ items:
             isExternal: '0'
     -
         title: E-shop
+        nesting: null
         type: url
         url: 'https://shop.alturas.cz/'
         code: ''
+        reference: null
+        cmsPage: null
+        replace: null
         viewBag:
             isHidden: '0'
             cssClass: ''

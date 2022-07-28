@@ -1,5 +1,11 @@
 {% if __SELF__.menuItems %}
     <ul class="nav nav-pills flex-column gap-3 flex-xl-row gap-xl-5 align-items-center">
         {% partial __SELF__ ~ "::items" items=__SELF__.menuItems %}
+
+        <li class="d-inline-flex mt-3 mt-xl-0">
+            <a href="{{ 'contact-us'|page }}" class="btn btn-blue btn-sm text-uppercase">
+                kontaktujte nás
+            </a>
+        </li>
     </ul>
 {% endif %}
