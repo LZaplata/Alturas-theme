@@ -1,3 +1,6 @@
+[collection reviews]
+handle = "Reviews\Review"
+==
 <div class="container-fluid py-5 overflow-hidden" id="partners">
     <div class="container-lg py-xl-5">
         <h2 class="text-uppercase text-center mb-4 mb-xl-5">
@@ -30,18 +33,28 @@
             </div>
         </div>
 
-        <div class="mt-5 row">
-            <div class="fs-20 text-black col col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
-                <p class="mb-4 fst-italic text-center">
-                    “Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud.”
-                </p>
+        <div class="swiper reviews-swiper mt-5">
+            <div class="swiper-wrapper">
+                {% for review in reviews %}
+                    <div class="swiper-slide align-self-center pb-5 pb-md-0">
+                        <div class="fs-20 text-black col col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
+                            <p class="mb-4 fst-italic text-center">
+                                “{{ review.content }}”
+                            </p>
 
-                <p class="mb-0 text-center">
-                    <span class="fw-bold">Jméno Příjmení</span> <br>
-                    Pozice ve Společnosti, s.r.o.
-                </p>
+                            <p class="mb-0 text-center">
+                                <span class="fw-bold">{{ review.name }} {{ review.surname }}</span> <br>
+                                {{ review.job }} ve {{ review.company }}
+                            </p>
+                        </div>
+                    </div>
+                {% endfor %}
             </div>
+
+            <div class="swiper-button-next d-none d-md-flex"></div>
+            <div class="swiper-button-prev d-none d-md-flex"></div>
+
+            <div class="swiper-pagination d-md-none"></div>
         </div>
     </div>
 </div>

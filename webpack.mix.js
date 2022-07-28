@@ -19,5 +19,6 @@ mix.setPublicPath("assets/")
             "pages/**/*",
             "partials/**/*",
             "assets/src/sass/*",
+            "assets/src/js/*",
         ],
     });

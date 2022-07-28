@@ -1,0 +1,35 @@
+uuid: 260eefd1-f0b5-4202-8490-23544e3ff54b
+handle: Reviews\Review
+type: stream
+name: Reference
+drafts: false
+
+primaryNavigation:
+    label: Reference
+    icon: icon-refresh
+    order: 60
+
+navigation:
+    icon: icon-list-ul
+    parent: Reviews\Review
+    order: 10
+
+fields:
+    content:
+        label: text
+        type: textarea
+        size: small
+        column: false
+        scope: false
+    name:
+        label: Jméno
+        span: left
+    surname:
+        label: Příjmení
+        span: right
+    job:
+        label: Pozice
+        span: left
+    company:
+        label: Společnost
+        span: right
