@@ -2,7 +2,7 @@
     {% if not item.viewBag.isHidden %}
         <li role="presentation" class="nav-item {{ item.viewBag.cssClass }}">
             {% if item.url %}
-                <a href="{{ item.url }}" {{ item.viewBag.isExternal ? 'target="_blank"' }} class="nav-link text-uppercase text-center {{ item.isActive ? 'active' : '' }} {{ item.isChildActive ? 'child-active' : '' }}">
+                <a href="{{ item.url }}" {{ item.viewBag.isExternal ? 'target="_blank"' }} class="nav-link text-uppercase text-center {{ item.isActive ? 'active' : '' }} {{ item.isChildActive ? 'active' : '' }}">
                     {{ item.title }}
                 </a>
             {% else %}
@@ -11,7 +11,7 @@
 
             {% if item.items %}
                 <div class="submenu">
-                    <ul class="nav nav-pills flex-column gap-3">
+                    <ul class="nav nav-pills flex-column gap-3 gap-xl-0">
                         {% partial __SELF__ ~ "::items" items=item.items %}
                     </ul>
                 </div>

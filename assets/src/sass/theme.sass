@@ -45,6 +45,40 @@ header
                                 .nav-link
                                     --bs-nav-link-font-size: var(--bs-font-size-16)
 
+            @include media-breakpoint-up(xl)
+                .nav
+                    li
+                        &:hover
+                            & > .submenu
+                                max-height: 500px
+                                transition-delay: 0s
+
+                        .submenu
+                            position: absolute
+                            margin-top: 41px
+                            z-index: 10
+                            max-height: 0
+                            overflow: hidden
+                            transition: max-height .2s ease-in-out
+                            transition-delay: .3s
+
+                            .nav
+                                background: var(--bs-red)
+
+                                li
+                                    .nav-link
+                                        --bs-nav-link-color: var(--bs-white)
+                                        --bs-nav-link-padding-x: 1rem
+                                        --bs-nav-link-padding-y: .8rem
+                                        --bs-nav-link-hover-color: var(--bs-white)
+                                        --bs-nav-pills-border-radius: 0
+                                        --bs-nav-pills-link-active-color: var(--bs-white)
+                                        --bs-nav-pills-link-active-bg: var(--bs-blue)
+                                        text-align: start !important
+
+                                        &:hover
+                                            background-color: var(--bs-blue)
+
 main
     margin-top: 5px
 

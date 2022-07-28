@@ -18,7 +18,7 @@ handle = "Seminars\Seminar"
             {% for category in categories %}
                 <div class="col category">
                     <div class="title">
-                        <a href="{{ 'seminars'|page }}#{{ category.slug }}" class="bg-blue-light bg-blue-hover transition p-4 fw-bold text-white fs-24 d-flex position-relative align-items-center">
+                        <a href="{{ 'seminars'|page }}/#{{ category.slug }}" class="bg-blue-light bg-blue-hover transition p-4 fw-bold text-white fs-24 d-flex position-relative align-items-center">
                             {{ category.title }}
 
                             <span class="mb-0 position-absolute end-0 bottom-0 d-flex">

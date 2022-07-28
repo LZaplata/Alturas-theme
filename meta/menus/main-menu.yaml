@@ -30,7 +30,7 @@ items:
                 title: 'Práce ve výškách'
                 nesting: null
                 type: url
-                url: '/hucr/alturas.cz/kurzy#prace-ve-vyskach'
+                url: '/hucr/alturas.cz/kurzy/#prace-ve-vyskach'
                 code: ''
                 reference: null
                 cmsPage: null
@@ -43,7 +43,7 @@ items:
                 title: 'První pomoc'
                 nesting: null
                 type: url
-                url: '/hucr/alturas.cz/kurzy#prvni-pomoc'
+                url: '/hucr/alturas.cz/kurzy/#kurzy-prvni-pomoci'
                 code: ''
                 reference: null
                 cmsPage: null
@@ -56,7 +56,7 @@ items:
                 title: 'Online kurzy'
                 nesting: null
                 type: url
-                url: '/hucr/alturas.cz/kurzy#online-kurzy'
+                url: '/hucr/alturas.cz/kurzy/#online-kurzy'
                 code: ''
                 reference: null
                 cmsPage: null
@@ -69,7 +69,7 @@ items:
                 title: E-learning
                 nesting: null
                 type: url
-                url: '/hucr/alturas.cz/kurzy#e-learning'
+                url: '/hucr/alturas.cz/kurzy/#e-learning'
                 code: ''
                 reference: null
                 cmsPage: null
@@ -82,7 +82,7 @@ items:
                 title: Teambuilding
                 nesting: null
                 type: url
-                url: '/hucr/alturas.cz/kurzy#teambuilding'
+                url: '/hucr/alturas.cz/kurzy/#teambuilding'
                 code: ''
                 reference: null
                 cmsPage: null
