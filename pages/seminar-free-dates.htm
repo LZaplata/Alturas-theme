@@ -1,14 +1,18 @@
-title = "Volné termíny"
+title = "Volné termíny kurzu"
 layout = "default"
-url = "/kurzy/volne-terminy"
+url = "/kurz/:slug/volne-terminy"
+
+[section seminar]
+handle = "Seminars\Seminar"
+entrySlug = "{{ :slug }}"
 ==
 <div class="container-fluid py-5 overflow-hidden" id="free-dates">
     <div class="container-lg py-xl-5">
         <h1 class="text-uppercase mb-4">
-            {{ this.page.title }}
+            Volné termíny
         </h1>
 
-        <div class="reenio-iframe" data-size="auto"></div>
+        <div class="reenio-iframe" data-size="auto" data-url="{{ seminar.reenio_url }}"></div>
         <script src="https://reenio.cz/cs/HAYDANY/widget-iframe.js" async defer></script>
     </div>
 </div>
