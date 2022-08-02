@@ -44,7 +44,7 @@ handle = "Reviews\Review"
 
                             <p class="mb-0 text-center">
                                 <span class="fw-bold">{{ review.name }} {{ review.surname }}</span> <br>
-                                {{ review.job }} ve {{ review.company }}
+                                {{ review.job }} {% if review.company %}ve {{ review.company }}{% endif %}
                             </p>
                         </div>
                     </div>
