@@ -1,8 +1,8 @@
 window.$ = window.jQuery = require("jquery");
 
 function setActiveLogo(index) {
-    $("#partners .logos .logo").removeClass("active");
-    $("#partners .logos .logo").eq(index).addClass("active");
+    $("#partners .logos .logo img").removeClass("border");
+    $("#partners .logos .logo img").eq(index).addClass("border");
 }
 
 var swiper = new Swiper(".reviews-swiper", {
