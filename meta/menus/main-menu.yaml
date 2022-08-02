@@ -130,7 +130,7 @@ items:
         title: E-shop
         nesting: null
         type: url
-        url: 'https://eshop.alturas.cz/'
+        url: 'https://eshop.alturas.cz/obchod'
         code: ''
         reference: null
         cmsPage: null

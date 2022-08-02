@@ -80,7 +80,7 @@ items:
     -
         title: E-shop
         type: url
-        url: 'https://eshop.alturas.cz'
+        url: 'https://eshop.alturas.cz/obchod'
         code: ''
         viewBag:
             isHidden: '0'
