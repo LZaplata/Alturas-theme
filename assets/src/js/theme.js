@@ -8,6 +8,10 @@ var swiper = new Swiper(".reviews-swiper", {
     pagination: {
         el: ".swiper-pagination",
     },
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
 });
 
 $(document).ready(function () {
