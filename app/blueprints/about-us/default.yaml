@@ -27,7 +27,7 @@ fields:
             fields:
                 photo:
                     label: Foto
-                    type: mediafinder
+                    type: fileupload
                     mode: image
                     maxItems: 1
                     imageWidth: 213
