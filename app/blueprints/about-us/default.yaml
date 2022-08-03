@@ -29,7 +29,7 @@ fields:
                     label: Foto
                     type: fileupload
                     mode: image
-                    maxItems: 1
+                    maxFiles: 1
                     imageWidth: 213
                     imageHeight: 209
                 name:
