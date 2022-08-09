@@ -1,7 +1,14 @@
 <div class="swiper">
     <div class="swiper-wrapper">
         <div class="swiper-slide position-relative">
-            <img src="{{ 'assets/images/banners/01.jpg'|theme }}" alt="" class="img-fluid h-sm-auto of-cover">
+            <picture>
+                <source srcset="{{ 'assets/images/banners/01@2x.jpg'|theme }}" media="(min-width: 1921px) and (max-width: 2048px)">
+                <source srcset="{{ 'assets/images/banners/01@3x.jpg'|theme }}" media="(min-width: 2049px)">
+
+                <img src="{{ 'assets/images/banners/01.jpg'|theme }}"
+                     alt="banner"
+                     class="img-fluid h-sm-auto of-cover">
+            </picture>
 
             <div class="container-lg position-absolute start-50 top-50 translate-middle">
                 <p class="fs-32 text-uppercase text-center lh-sm text-white">
