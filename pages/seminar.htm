@@ -29,7 +29,8 @@ entrySlug = "{{ :slug }}"
         <div class="row row-cols-1 g-0 row-cols-sm-2">
             {% for image in seminar.images %}
                 <div class="col">
-                    <img src="{{ image.thumb(961, 640, {mode: 'crop'}) }}" alt="{{ image.title }}" class="img-fluid">
+{#                    <img src="{{ image.thumb(961, 640, {mode: 'crop'}) }}" alt="{{ image.title }}" class="img-fluid">#}
+                    <img src="{{ image.thumb(1400, 932, {mode: 'crop'}) }}" alt="{{ image.title }}" class="img-fluid">
                 </div>
             {% endfor %}
         </div>
