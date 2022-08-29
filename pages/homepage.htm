@@ -7,13 +7,27 @@ title = "Úvod"
 {% partial "homepage/partners" %}
 
 <div class="banner text-center">
-    <img src="{{ 'assets/images/banners/homepage/01.jpg'|theme }}" alt="Banner" class="img-fluid h-sm-auto of-cover">
+    <picture>
+        <source srcset="{{ 'assets/images/banners/homepage/01@2x.jpg'|theme }}" media="(min-width: 1921px) and (max-width: 2048px)">
+        <source srcset="{{ 'assets/images/banners/homepage/01@3x.jpg'|theme }}" media="(min-width: 2049px)">
+
+        <img src="{{ 'assets/images/banners/homepage/01.jpg'|theme }}"
+             alt="banner"
+             class="img-fluid h-sm-auto of-cover">
+    </picture>
 </div>
 
 {% partial "homepage/contacts" %}
 
 <div class="banner text-center">
-    <img src="{{ 'assets/images/banners/homepage/02.jpg'|theme }}" alt="Banner" class="img-fluid h-sm-auto of-cover">
+    <picture>
+        <source srcset="{{ 'assets/images/banners/homepage/02@2x.jpg'|theme }}" media="(min-width: 1921px) and (max-width: 2048px)">
+        <source srcset="{{ 'assets/images/banners/homepage/02@3x.jpg'|theme }}" media="(min-width: 2049px)">
+
+        <img src="{{ 'assets/images/banners/homepage/02.jpg'|theme }}"
+             alt="banner"
+             class="img-fluid h-sm-auto of-cover">
+    </picture>
 </div>
 
 {% partial "homepage/blog" %}
