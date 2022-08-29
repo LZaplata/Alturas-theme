@@ -22,5 +22,6 @@ fields:
         type: fileupload
         mode: image
         maxFiles: 1
-        imageWidth: 1920
-        imageHeight: 744
+        imageWidth: 4500
+        imageHeight: 1744
+        commentAbove: Je potřeba nahrát obrázek ve velikosti 4500x1744px.
