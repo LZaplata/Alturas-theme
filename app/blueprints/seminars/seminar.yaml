@@ -61,8 +61,17 @@ fields:
         label: Titulek
         span: left
         tab: SEO
+    meta_title_free_dates:
+        label: Titulek (Volné termíny)
+        span: right
+        tab: SEO
     meta_description:
         label: Popis
         span: left
+        tab: SEO
+        type: textarea
+    meta_description_free_dates:
+        label: Popis (Volné termíny)
+        span: right
         tab: SEO
         type: textarea
