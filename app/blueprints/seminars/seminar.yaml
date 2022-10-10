@@ -25,28 +25,44 @@ fields:
             - numeric
         span: left
         default: 0
+        tab: Obecné
     heading:
         label: Nadpis v detailu
         type: text
+        tab: Obecné
     excerpt:
         label: Perex
         type: textarea
         size: small
+        tab: Obecné
     content:
         label: Obsah
         type: richeditor
         size: huge
         toolbarButtons: paragraphFormat|align|bold,italic,underline|formatOL,formatUL|insertTable,insertLink,insertImage,insertFile,insertHR,html
+        tab: Obecné
     images:
         label: Obrázky
         type: fileupload
         mode: image
         span: left
+        tab: Obecné
     categories:
         label: Kategorie
         type: entries
         source: Seminars\Category
         span: right
+        tab: Obecné
     reenio_url:
         label: Reenio URL
         span: left
+        tab: Obecné
+    meta_title:
+        label: Titulek
+        span: left
+        tab: SEO
+    meta_description:
+        label: Popis
+        span: left
+        tab: SEO
+        type: textarea
