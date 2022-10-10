@@ -16,7 +16,7 @@ entrySlug = "{{ :slug }}"
 <div class="container-fluid py-5 overflow-hidden" id="free-dates">
     <div class="container-lg py-xl-5">
         <h1 class="text-uppercase mb-4">
-            Volné termíny
+            {{ seminar.heading ?: seminar.title }} - Volné termíny
         </h1>
 
         <div class="reenio-iframe" data-size="auto" data-url="{{ seminar.reenio_url }}"></div>
