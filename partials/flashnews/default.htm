@@ -1,6 +1,6 @@
 {% set posts = __SELF__.posts %}
 
-<div class="post">
+<div class="post lh-sm">
     {% for post in posts %}
         {{ post.content|raw }}
     {% endfor %}
