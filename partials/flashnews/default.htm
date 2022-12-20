@@ -1,0 +1,7 @@
+{% set posts = __SELF__.posts %}
+
+<div class="post">
+    {% for post in posts %}
+        {{ post.content|raw }}
+    {% endfor %}
+</div>

@@ -1,0 +1,24 @@
+[blogPosts flashnews]
+pageNumber = "{{ :page }}"
+categoryFilter = "oznameni"
+postsPerPage = 1
+noPostsMessage = "Nenalezeny žádné příspěvky"
+sortOrder = "published_at desc"
+categoryPage = "about-us"
+postPage = "about-us"
+==
+{% if flashnews.posts.count > 0 %}
+    <div class="container-fluid alert alert-red rounded-0 border-0" id="flash-news">
+        <div class="container-lg">
+            <div class="row g-0 align-items-center">
+                <div class="col-auto">
+                    <i class="bio bi-info-circle fs-40 me-4"></i>
+                </div>
+
+                <div class="col posts">
+                    {% component "flashnews" %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endif %}
