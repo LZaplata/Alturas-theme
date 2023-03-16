@@ -8,6 +8,12 @@
     <div class="richeditor">
         {{ post.content|raw }}
     </div>
+
+    {% if post.video %}
+        <div class="ratio ratio-16x9 mt-5">
+            {{ post.video|raw }}
+        </div>
+    {% endif %}
 </div>
 
 {% if post.featured_images.count %}
