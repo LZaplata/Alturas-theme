@@ -5,6 +5,7 @@ use October\Rain\Support\Facades\Event;
 use RainLab\Blog\Controllers\Posts;
 use RainLab\Blog\Models\Post;
 use System\Classes\PluginBase;
+use System\Models\File;
 
 /**
  * Plugin Information File
@@ -44,6 +45,14 @@ class Plugin extends PluginBase
     public function boot()
     {
         /**
+         * Extend Post model
+         */
+        Post::extend(function ($model) {
+            $model->addJsonable("content_misc");
+            $model->rules["content"] = "";
+        });
+
+        /**
          * Add video textarea to Rainlab.Blog post
          */
         Event::listen("backend.form.extendFields", function ($widget) {
@@ -60,6 +69,51 @@ class Plugin extends PluginBase
             }
 
             $widget->addSecondaryTabFields([
+                "content" => [
+                    "tab"       => "rainlab.blog::lang.post.tab_edit",
+                    "type"      => "richeditor",
+                    "stretch"   => true,
+                    "required"  => false,
+                ],
+                "content_misc" => [
+                    "tab"           => "Obsah",
+                    "type"          => "repeater",
+                    "prompt"        => "Přidat obsah",
+                    "itemsExpanded" => false,
+                    "form" => [
+                        "fields" => [
+                            "type" => [
+                                "type"  => "dropdown",
+                                "label" => "Typ",
+                                "options" => [
+                                    "text"      => "Text",
+                                    "gallery"   => "Galerie"
+                                ],
+                            ],
+                            "text" => [
+                                "type"  => "richeditor",
+                                "size"  => "huge",
+                                "label" => "Text",
+                                "trigger" => [
+                                    "action"    => "show",
+                                    "field"     => "type",
+                                    "condition" => "value[type][text]",
+                                ]
+                            ],
+                            "images" => [
+                                "type"      => "mediafinder",
+                                "label"     => "Obrázky",
+                                "maxItems"  => 100,
+                                "mode"      => "image",
+                                "trigger" => [
+                                    "action"    => "show",
+                                    "field"     => "type",
+                                    "condition" => "value[type][gallery]",
+                                ]
+                            ],
+                        ],
+                    ]
+                ],
                 "video" => [
                     "label"     => "Video",
                     "tab"       => "rainlab.blog::lang.post.tab_manage",

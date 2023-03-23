@@ -1,3 +1,4 @@
 1.0.1:
     - First version of BlogExtensions
     - add_video_column.php
+    - add_content_misc_column.php

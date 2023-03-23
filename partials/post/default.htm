@@ -6,7 +6,23 @@
     </h1>
 
     <div class="richeditor">
-        {{ post.content|raw }}
+        {% if post.content_misc %}
+            {% for content in post.content_misc %}
+                {% if content.type == "text" %}
+                    {{ content.text|raw }}
+                {% elseif content.type == "gallery" %}
+                    {% if content.images %}
+                        <p class="row row-cols-1 g-4 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4">
+                            {% for image in content.images %}
+                                <img src="{{ image|media }}" alt="{{ image.description }}" class="col img-fluid">
+                            {% endfor %}
+                        </p>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        {% else %}
+            {{ post.content|raw }}
+        {% endif %}
     </div>
 
     {% if post.video %}
