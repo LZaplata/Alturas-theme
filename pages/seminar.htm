@@ -19,6 +19,12 @@ entrySlug = "{{ :slug }}"
             {{ seminar.heading ?: seminar.title }}
         </h1>
 
+        {% if seminar.youtube %}
+            <div class="ratio ratio-16x9 mb-4 mb-xl-5">
+                {{ seminar.youtube|raw }}
+            </div>
+        {% endif %}
+
         <div class="richeditor">
             {{ seminar.content|raw }}
         </div>

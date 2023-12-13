@@ -35,6 +35,13 @@ fields:
         type: textarea
         size: small
         tab: Obecné
+    youtube:
+        label: Youtube
+        commentAbove: Kód iframe pro vložení do stránek
+        type: textarea
+        size: tiny
+        span: left
+        tab: Obecné
     content:
         label: Obsah
         type: richeditor
