@@ -31,9 +31,15 @@ entrySlug = "{{ :slug }}"
 
         <div class="mt-5 pt-xl-5">
             <p class="mb-0 text-center">
-                <a href="{{ 'seminar-free-dates'|page({slug: seminar.slug}) }}" class="btn btn-blue btn-lg text-uppercase w-100 w-sm-auto">
-                    volné termíny
-                </a>
+                {% if seminar.slug == "teambuilding" %}
+                    <a href="{{ 'contact-us'|page }}" class="btn btn-blue btn-lg text-uppercase w-100 w-sm-auto">
+                        kontaktujte nás
+                    </a>
+                {% else %}
+                    <a href="{{ 'seminar-free-dates'|page({slug: seminar.slug}) }}" class="btn btn-blue btn-lg text-uppercase w-100 w-sm-auto">
+                        volné termíny
+                    </a>
+                {% endif %}
             </p>
         </div>
     </div>
