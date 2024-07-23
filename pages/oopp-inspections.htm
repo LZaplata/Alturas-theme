@@ -61,9 +61,17 @@ handle = "OoppInspections"
         </picture>
     </div>
 
-    <div class="container-lg mt-5 py-xl-5">
+    <div class="container-lg mt-5 pt-xl-5">
         <div class="richeditor">
             {{ ooppInspections.content_bottom|raw }}
         </div>
+    </div>
+
+    <div class="mt-5 py-xl-5">
+        <p class="mb-0 text-center">
+            <a href="{{ ooppInspections.reenio_url }}" target="_blank" class="btn btn-blue btn-lg text-uppercase w-100 w-sm-auto">
+                volné termíny
+            </a>
+        </p>
     </div>
 </div>
