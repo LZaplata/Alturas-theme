@@ -14,6 +14,7 @@ $theme-colors: (
     "red":                      #ED1C24,
     "yellow":                   #FDB713,
     "gray":                     #C4C4C4,
+    "gray-200":                 #e9ecef,
     "white":                    #FFFFFF,
     "black":                    #000000,
 );
@@ -104,6 +105,29 @@ $nav-pills-link-active-bg:      transparent;
 
 $offcanvas-bg-color:            $primary;
 $offcanvas-color:               map-get($theme-colors, "white");
+
+$accordion-button-color:                $primary;
+$accordion-button-padding-x:            0;
+$accordion-button-padding-y:            1rem;
+$accordion-button-active-bg:            transparent;
+$accordion-button-active-color:         $primary;
+$accordion-button-focus-border-color:   transparent;
+$accordion-button-focus-box-shadow:     none;
+$accordion-button-icon:                 url("../images/icons/plus.svg");
+$accordion-button-active-icon:          url("../images/icons/minus.svg");
+$accordion-border-width:                1px;
+$accordion-border-color:                map-get($theme-colors, "gray-200");
+$accordion-border-radius:               0;
+$accordion-color:                       $primary;
+
+$faq-accordion-item-border-x:           0;
+$faq-accordion-button-font-size:        map-get($font-sizes, 2);
+$faq-accordion-button-font-weight:      $font-weight-bold;
+$faq-accordion-number-font-size:        map-get($font-sizes, 16);
+$faq-accordion-number-font-weight:      $font-weight-base;
+$faq-accordion-number-color:            map-get($theme-colors, "white");
+$faq-accordion-number-size:             40px;
+$faq-accordion-number-bg:               map-get($theme-colors, "blue-light");
 
 // 3. Include remainder of required Bootstrap stylesheets
 @import "~bootstrap/scss/variables";
@@ -210,6 +234,8 @@ $utilities:
 @import "~bootstrap/scss/close";
 @import "~bootstrap/scss/forms";
 @import "~bootstrap/scss/alert";
+@import "~bootstrap/scss/accordion";
+@import "~bootstrap/scss/transitions";
 
 // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
 @import "~bootstrap/scss/utilities/api";

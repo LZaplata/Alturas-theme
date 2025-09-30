@@ -39,6 +39,19 @@ items:
             cssClass: ''
             isExternal: '0'
     -
+        title: 'Časté dotazy'
+        nesting: null
+        type: cms-page
+        url: null
+        code: ''
+        reference: faq
+        cmsPage: null
+        replace: null
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
         title: Blog
         nesting: null
         type: cms-page

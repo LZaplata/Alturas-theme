@@ -1,0 +1,16 @@
+url = "/faq"
+layout = "default"
+title = "Časté dotazy"
+
+[collection faq]
+handle = "FAQ\Question"
+==
+<div class="container-fluid py-5 overflow-hidden" id="faq">
+    <div class="container-lg pt-xl-5">
+        <h1 class="text-uppercase mb-4">
+            Časté dotazy
+        </h1>
+
+        {% partial "_accordion/faq" items=faq %}
+    </div>
+</div>
