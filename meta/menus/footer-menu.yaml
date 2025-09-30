@@ -92,11 +92,24 @@ items:
             isExternal: '0'
     -
         title: E-shop
+        nesting: null
         type: url
         url: 'https://eshop.alturas.cz'
         code: ''
+        reference: null
+        cmsPage: null
+        replace: null
         viewBag:
             isHidden: '0'
             cssClass: ''
             isExternal: '1'
+    -
+        title: 'Děkujeme za nákup'
+        type: cms-page
+        code: ''
+        reference: dekujeme-za-nakup
+        viewBag:
+            isHidden: '1'
+            cssClass: ''
+            isExternal: '0'
 name: 'Footer menu'
