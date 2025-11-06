@@ -8,7 +8,7 @@ default = 1
 [seo]
 ==
 <!DOCTYPE html>
-<html class="h-100" lang="en" {% placeholder schema %}>
+<html class="h-100" lang="en" {% placeholder schematype %}>
     <head>
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no">
@@ -36,6 +36,8 @@ default = 1
             }
         </script>
         <!-- End Google Tag Manager -->
+
+        {% placeholder schema %}
     </head>
 
     <body class="d-flex flex-column h-100">
