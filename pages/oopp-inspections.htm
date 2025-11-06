@@ -75,3 +75,103 @@ handle = "OoppInspections"
         </p>
     </div>
 </div>
+
+{% put schema %}
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": ["WebPage", "Service"],
+                    "@id": "https://www.alturas.cz/kontroly-oopp#webpage",
+                    "url": "https://www.alturas.cz/kontroly-oopp",
+                    "name": "Kontroly OOPP pro práci ve výškách",
+                    "inLanguage": "cs",
+                    "isPartOf": { "@id": "https://www.alturas.cz/#website" },
+                    "provider": { "@id": "https://www.alturas.cz/#organization" },
+                    "serviceType": "Kontroly osobních ochranných prostředků proti pádu (OOPP)",
+                    "description": "Kompletní vizuální a funkční kontroly OOPP pro práci ve výškách včetně protokolů. Možnost kontroly u zákazníka nebo v Praze.",
+                    "areaServed": [
+                        { "@type": "Place", "name": "Praha" },
+                        { "@type": "Country", "name": "Česká republika" },
+                        { "@type": "Country", "name": "Slovensko" }
+                    ],
+                    "availableChannel": [
+                        {
+                            "@type": "ServiceChannel",
+                            "name": "Online rezervace",
+                            "serviceUrl": "https://alturas.reenio.cz/",
+                            "availableLanguage": ["cs", "sk"]
+                        },
+                        {
+                            "@type": "ServiceChannel",
+                            "name": "Kontrola u zákazníka",
+                            "availableLanguage": ["cs", "sk"],
+                            "serviceLocation": {
+                                "@type": "Place",
+                                "name": "Alturas s.r.o.",
+                                "address": {
+                                    "@type": "PostalAddress",
+                                    "streetAddress": "Na Zlatnici 938/7",
+                                    "addressLocality": "Praha 4",
+                                    "postalCode": "14700",
+                                    "addressCountry": "CZ"
+                                }
+                            }
+                        }
+                    ],
+                    "audience": { "@type": "BusinessAudience", "name": "Firmy, provozy, správci budov" },
+                    "potentialAction": {
+                        "@type": "ReserveAction",
+                        "target": {
+                            "@type": "EntryPoint",
+                            "urlTemplate": "https://alturas.reenio.cz/",
+                            "actionPlatform": [
+                                "http://schema.org/DesktopWebPlatform",
+                                "http://schema.org/MobileWebPlatform"
+                            ]
+                        }
+                    },
+                    "breadcrumb": { "@id": "https://www.alturas.cz/kontroly-oopp#breadcrumb" }
+                },
+                {
+                    "@type": "BreadcrumbList",
+                    "@id": "https://www.alturas.cz/kontroly-oopp#breadcrumb",
+                    "itemListElement": [
+                        { "@type": "ListItem", "position": 1, "name": "Domů", "item": "https://www.alturas.cz/" },
+                        { "@type": "ListItem", "position": 2, "name": "Kontroly OOPP", "item": "https://www.alturas.cz/kontroly-oopp" }
+                    ]
+                },
+                {
+                    "@type": "WebSite",
+                    "@id": "https://www.alturas.cz/#website",
+                    "url": "https://www.alturas.cz/",
+                    "name": "Alturas",
+                    "inLanguage": "cs",
+                    "publisher": { "@id": "https://www.alturas.cz/#organization" }
+                },
+                {
+                    "@type": "Organization",
+                    "@id": "https://www.alturas.cz/#organization",
+                    "name": "Alturas s.r.o.",
+                    "url": "https://www.alturas.cz/",
+                    "email": "shop@alturas.cz",
+                    "telephone": "+420 607 712 834",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "Na Zlatnici 938/7",
+                        "addressLocality": "Praha 4",
+                        "postalCode": "14700",
+                        "addressCountry": "CZ"
+                    },
+                    "sameAs": [
+                        "https://www.facebook.com/shop.alturas/",
+                        "https://www.instagram.com/alturas.cz/",
+                        "https://eshop.alturas.cz/",
+                        "https://alturas.reenio.cz/"
+                    ]
+                }
+            ]
+        }
+    </script>
+{% endput %}
