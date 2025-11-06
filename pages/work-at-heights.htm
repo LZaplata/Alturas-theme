@@ -34,3 +34,100 @@ handle = "WorkAtHeights"
         </div>
     </div>
 </div>
+
+{% put schema %}
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "WebPage",
+                    "@id": "https://www.alturas.cz/prace-ve-vyskach#webpage",
+                    "url": "https://www.alturas.cz/prace-ve-vyskach",
+                    "name": "Práce ve výškách",
+                    "inLanguage": "cs",
+                    "breadcrumb": { "@id": "https://www.alturas.cz/prace-ve-vyskach#breadcrumb" },
+                    "mainEntity": { "@id": "https://www.alturas.cz/prace-ve-vyskach#service" },
+                    "isPartOf": { "@id": "https://www.alturas.cz/#website" }
+                },
+                {
+                    "@type": "Service",
+                    "@id": "https://www.alturas.cz/prace-ve-vyskach#service",
+                    "name": "Odborné práce ve výškách a nad volnou hladinou",
+                    "serviceType": "Práce ve výškách",
+                    "description": "Pomoc se samotnou prací ve výškách včetně dozoru, poradenství a asistence: opravy střech, fasád, světlíků a komínů; opravy a čištění okapů; údržba a nátěr konstrukcí; údržba a rizikové kácení stromů; odstraňování sněhu; instalace zábran proti ptactvu; instalace antén.",
+                    "provider": { "@id": "https://www.alturas.cz/#organization" },
+                    "brand": { "@id": "https://www.alturas.cz/#organization" },
+                    "areaServed": [
+                        { "@type": "Country", "name": "Česká republika" },
+                        { "@type": "Country", "name": "Slovensko" }
+                    ],
+                    "category": [
+                        "opravy střech, fasád, světlíků a komínů",
+                        "opravy a čištění okapů",
+                        "údržba a nátěr konstrukcí",
+                        "údržba a rizikové kácení stromů",
+                        "odstraňování sněhu",
+                        "instalace zábran proti ptactvu",
+                        "instalace antén"
+                    ],
+                    "availableChannel": [
+                        {
+                            "@type": "ServiceChannel",
+                            "name": "Telefon",
+                            "servicePhone": {
+                                "@type": "ContactPoint",
+                                "telephone": "+420 607 712 834",
+                                "contactType": "customer service",
+                                "availableLanguage": ["cs","sk"]
+                            }
+                        },
+                        {
+                            "@type": "ServiceChannel",
+                            "name": "E-mail",
+                            "serviceUrl": "https://www.alturas.cz/prace-ve-vyskach",
+                            "serviceSmsNumber": null
+                        }
+                    ]
+                },
+                {
+                    "@type": "BreadcrumbList",
+                    "@id": "https://www.alturas.cz/prace-ve-vyskach#breadcrumb",
+                    "itemListElement": [
+                        { "@type": "ListItem", "position": 1, "name": "Domů", "item": "https://www.alturas.cz/" },
+                        { "@type": "ListItem", "position": 2, "name": "Práce ve výškách", "item": "https://www.alturas.cz/prace-ve-vyskach" }
+                    ]
+                },
+                {
+                    "@type": "WebSite",
+                    "@id": "https://www.alturas.cz/#website",
+                    "url": "https://www.alturas.cz/",
+                    "name": "Alturas",
+                    "inLanguage": "cs",
+                    "publisher": { "@id": "https://www.alturas.cz/#organization" }
+                },
+                {
+                    "@type": "Organization",
+                    "@id": "https://www.alturas.cz/#organization",
+                    "name": "Alturas s.r.o.",
+                    "url": "https://www.alturas.cz/",
+                    "email": "shop@alturas.cz",
+                    "telephone": "+420 607 712 834",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "Na Zlatnici 938/7",
+                        "addressLocality": "Praha 4",
+                        "postalCode": "14700",
+                        "addressCountry": "CZ"
+                    },
+                    "sameAs": [
+                        "https://www.facebook.com/shop.alturas/",
+                        "https://www.instagram.com/alturas.cz/",
+                        "https://eshop.alturas.cz/",
+                        "https://alturas.reenio.cz/"
+                    ]
+                }
+            ]
+        }
+    </script>
+{% endput %}
