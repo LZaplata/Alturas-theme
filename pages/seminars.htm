@@ -116,3 +116,49 @@ handle = "Seminars\Seminar"
         </p>
     </div>
 </div>
+
+{% put schema %}
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": ["WebPage", "CollectionPage"],
+                    "@id": "https://www.alturas.cz/kurzy#webpage",
+                    "url": "https://www.alturas.cz/kurzy",
+                    "name": "Kurzy",
+                    "inLanguage": "cs",
+                    "breadcrumb": { "@id": "https://www.alturas.cz/kurzy#breadcrumb" },
+                    "mainEntity": { "@id": "https://www.alturas.cz/kurzy#kurzy-list" }
+                },
+                {
+                    "@type": "BreadcrumbList",
+                    "@id": "https://www.alturas.cz/kurzy#breadcrumb",
+                    "itemListElement": [
+                        { "@type": "ListItem", "position": 1, "name": "Domů", "item": "https://www.alturas.cz/" },
+                        { "@type": "ListItem", "position": 2, "name": "Kurzy", "item": "https://www.alturas.cz/kurzy" }
+                    ]
+                },
+                {
+                    "@type": "ItemList",
+                    "@id": "https://www.alturas.cz/kurzy#kurzy-list",
+                    "name": "Přehled kurzů",
+                    "itemListOrder": "https://schema.org/ItemListOrderAscending",
+                    "itemListElement": [
+                        { "@type": "ListItem", "position": 1, "item": { "@type": "Course", "@id": "https://www.alturas.cz/kurz/zakladni-skoleni-a#course", "name": "Základní školení", "url": "https://www.alturas.cz/kurz/zakladni-skoleni-a" } },
+                        { "@type": "ListItem", "position": 2, "item": { "@type": "Course", "@id": "https://www.alturas.cz/kurz/S1-strechy-a-kontrukce#course", "name": "Školení práce ve výškách 1: Střechy a konstrukce", "url": "https://www.alturas.cz/kurz/S1-strechy-a-kontrukce" } },
+                        { "@type": "ListItem", "position": 3, "item": { "@type": "Course", "@id": "https://www.alturas.cz/kurz/S2-lanovy-pristup#course", "name": "Školení práce ve výškách 2: Lanový přístup", "url": "https://www.alturas.cz/kurz/S2-lanovy-pristup" } },
+                        { "@type": "ListItem", "position": 4, "item": { "@type": "Course", "@id": "https://www.alturas.cz/kurz/opakovaci-skoleni#course", "name": "Základní opakovací školení", "url": "https://www.alturas.cz/kurz/opakovaci-skoleni" } },
+                        { "@type": "ListItem", "position": 5, "item": { "@type": "Course", "@id": "https://www.alturas.cz/kurz/opakovaci-s1-strechy-konstrukce#course", "name": "Opakovací Š1: Střechy a konstrukce", "url": "https://www.alturas.cz/kurz/opakovaci-s1-strechy-konstrukce" } },
+                        { "@type": "ListItem", "position": 6, "item": { "@type": "Course", "@id": "https://www.alturas.cz/kurz/opakovaci-S2-lanovy-pristup#course", "name": "Opakovací Š2: Lanový přístup", "url": "https://www.alturas.cz/kurz/opakovaci-S2-lanovy-pristup" } },
+                        { "@type": "ListItem", "position": 7, "item": { "@type": "Course", "@id": "https://www.alturas.cz/kurz/individualni-skoleni#course", "name": "Individuální školení", "url": "https://www.alturas.cz/kurz/individualni-skoleni" } },
+                        { "@type": "ListItem", "position": 8, "item": { "@type": "Course", "@id": "https://www.alturas.cz/kurz/prvni-pomoc-zaklad#course", "name": "První pomoc — Základ", "url": "https://www.alturas.cz/kurz/prvni-pomoc-zaklad" } },
+                        { "@type": "ListItem", "position": 9, "item": { "@type": "Course", "@id": "https://www.alturas.cz/kurz/prvni-pomoc-standard#course", "name": "První pomoc — Standard", "url": "https://www.alturas.cz/kurz/prvni-pomoc-standard" } },
+                        { "@type": "ListItem", "position": 10, "item": { "@type": "Course", "@id": "https://www.alturas.cz/kurz/prvni-pomoc-extra#course", "name": "První pomoc — Extra", "url": "https://www.alturas.cz/kurz/prvni-pomoc-extra" } },
+                        { "@type": "ListItem", "position": 11, "item": { "@type": "Course", "@id": "https://www.alturas.cz/kurz/teambuilding#course", "name": "Teambuilding", "url": "https://www.alturas.cz/kurz/teambuilding" } }
+                    ]
+                }
+            ]
+        }
+    </script>
+{% endput %}
